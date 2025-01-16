@@ -29,10 +29,10 @@ function login_logo() {
     // $default_image_theme = trailingslashit(CORE_FUNCTIONALITY_THEME_URI) .'assets/images/site-login-logo.png';
 
     // This background is from the media library. 
-    $default_image_media_library = '/wp-content/uploads/2024/10/AdobeColorGradient-gradient_fflassist-with-checkmark.png';
+    $default_image_media_library = '/wp-content/uploads/2018/06/logo_small.png';
 
     //Set preferred logo image and background image
-    $default_image = $default_image_plugin_svg;
+    $default_image = $default_image_plugin;
     $default_image_background = $default_image_media_library;
 
 	?>
@@ -44,7 +44,7 @@ function login_logo() {
             width:320px;
             background-size: 320px 65px;
             background-repeat: no-repeat;
-            background-color: rgba(237,242,247,0.5);
+            background-color: #a80000;
             border-radius: 8px;
         }
         body.login {
@@ -55,11 +55,12 @@ function login_logo() {
         #login p#nav a,
         #login p#backtoblog a,
         #login .privacy-policy-page-link a {
-            color: #ffffff;
+            color: #a80000;
+            font-weight: bold;
         }
         .login form {
             border-radius: 10px;
-            background-color: #29A632 !important;
+            background-color: #b9a06f !important;
         }
     </style>
 	<?php 
