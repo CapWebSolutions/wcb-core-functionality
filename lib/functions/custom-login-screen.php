@@ -23,26 +23,23 @@ function login_logo() {
 
     // Image file path possibilities for site logo. In plugin or in theme. 
     $default_image_plugin = trailingslashit(CORE_FUNCTIONALITY_PLUGIN_URI) .'assets/images/site-login-logo.png';
-    $default_image_plugin_svg = trailingslashit(CORE_FUNCTIONALITY_PLUGIN_URI) .'assets/images/site-login-logo.svg';
-
-
-    // $default_image_theme = trailingslashit(CORE_FUNCTIONALITY_THEME_URI) .'assets/images/site-login-logo.png';
 
     // This background is from the media library. 
-    $default_image_media_library = '/wp-content/uploads/2018/06/logo_small.png';
+    $default_image_media_library = '/wp-content/uploads/2018/06/PCY_logo-11.png';
 
     //Set preferred logo image and background image
     $default_image = $default_image_plugin;
-    $default_image_background = $default_image_media_library;
+    $default_background = $default_image_media_library;
 
 	?>
     <style type="text/css">
         #login h1 a, 
         .login h1 a {
-            background-image: url(<?php echo $default_image ?>);
-            height:65px;
+            /* background-image: url(<?php // echo $default_image ?>); */
+            background-image: url(<?php echo $default_background ?>);
+            /* height:65px; */
             width:320px;
-            background-size: 320px 65px;
+            background-size: 320px;
             background-repeat: no-repeat;
             background-color: #a80000;
             border-radius: 8px;
@@ -50,7 +47,7 @@ function login_logo() {
         body.login {
             /* background: rgb(84,110,145); */
             /* background: radial-gradient(circle, rgba(84,110,145,1) 0%, rgba(156,156,156,1) 100%); */
-            background-image: url(<?php echo $default_image_background ?>);
+            background-image: url(<?php echo $default_background ?>);
         }
         #login p#nav a,
         #login p#backtoblog a,
