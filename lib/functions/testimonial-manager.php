@@ -74,8 +74,10 @@ function testimonial_shortcode_handler($atts, $content, $tag ) {
     $rating = rwmb_meta( 'rating', '', $atts['post_id'] );
 
     $output = '<div class="star-rating">';
-    for ( $i = 1; $i <= 5; $i++ ) {
-        $output .= '<span class="dashicons dashicons-star-' . ( $i <= $rating ? 'filled' : 'empty' ) . '"></span>';
+    if ( 1 <= $rating ) { // Only output if rating greater than 0
+        for ( $i = 1; $i <= 5; $i++ ) {
+            $output .= '<span class="dashicons dashicons-star-' . ( $i <= $rating ? 'filled' : 'empty' ) . '"></span>';
+        }
     }
     $output .= '</div>';
 
