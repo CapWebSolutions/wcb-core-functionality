@@ -3,7 +3,7 @@
  * Plugin Name: Wolf Creek Backcountry Core Functionality
  * Plugin URI: https://github.com/CapWebSolutions/wcb-core-functionality
  * Description: This contains core functionality for wolfcreekbackountry.com so that it is theme independent. It should remain activated.
- * Version: 1.0.0
+ * Version: 1.1.3
  * Author: Cap Web Solutions
  * Author URI: https://capwebsolutions.com
  * GitHub Plugin URI: https://github.com/CapWebSolutions/wcb-core-functionality
